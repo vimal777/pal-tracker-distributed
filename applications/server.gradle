@@ -20,4 +20,5 @@ dependencies {
     compile "ch.qos.logback:logback-classic:1.1.11"
 
     testCompile project(":components:test-support")
+    compile "io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker"
 }
