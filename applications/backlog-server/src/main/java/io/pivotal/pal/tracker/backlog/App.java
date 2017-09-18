@@ -14,6 +14,7 @@ import org.springframework.web.client.RestOperations;
 import java.util.TimeZone;
 
 
+@EnableWebSecurity
 @EnableResourceServer
 @EnableCircuitBreaker
 @EnableEurekaClient
@@ -28,8 +29,8 @@ public class App {
 
     @Bean
     ProjectClient projectClient(
-        RestOperations restOperations,
-        @Value("${registration.server.endpoint}") String registrationEndpoint
+            RestOperations restOperations,
+            @Value("${registration.server.endpoint}") String registrationEndpoint
     ) {
         return new ProjectClient(restOperations, registrationEndpoint);
     }
