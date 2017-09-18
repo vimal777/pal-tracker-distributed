@@ -8,7 +8,6 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 
 import java.util.TimeZone;
-
 @EnableWebSecurity
 @EnableResourceServer
 @EnableEurekaClient
@@ -17,8 +16,7 @@ import java.util.TimeZone;
     "io.pivotal.pal.tracker.accounts",
     "io.pivotal.pal.tracker.restsupport",
     "io.pivotal.pal.tracker.projects",
-    "io.pivotal.pal.tracker.users",
-    "io.pivotal.pal.tracker.registration"
+    "io.pivotal.pal.tracker.users", "io.pivotal.pal.tracker.registration"
 })
 public class App {
     public static void main(String[] args) {
